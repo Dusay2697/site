@@ -5,59 +5,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>main.jsp</title>
-<style type="text/css">
-  .right {
-    position: relative;
-    left: 280px;
-    text-decoration: none;
-    
-  }
-  .left {
-    position: relative;
-    right: 280px;
-    text-decoration: none;
-  }
-  #join {
-    position :relative;
-    left: 200px;
-  }
-  #login1{
-    position :relative;
-    left: 230px;
-  }
-  #basket {
-    position :relative;
-    left: 260px;
-  }
-  #order {
-    position :relative;
-    left: 290px;
-  }
-  #faq {
-    position :relative;
-    right: 290px;
-  }
-  #review {
-    position :relative;
-    right: 260px;
-  }
-  #menu {
-   background: #1c205f;
-   
-  }
-  .sub{
-   text-decoration: none;
-   color: whith;
-  }
-  #bm {
-   border-top: 1px solid;
-  }
- 
-</style>
+<link href="main.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 
-<table width="960"  align="center">
+<table width="960" height="200" align="center">
  <tr>
   <td height="43" align="center" colspan="2" >
      <a class="left" id="faq" href="#">FAQ</a>
@@ -71,15 +24,19 @@
     <jsp:include page="top.jsp"/>   
   </td>
  </tr>
- <tr id="menu">
+</table>
+<table width="1500"  align="center">
+ <tr id="menu" >
   <td align="left" width="100%">
-   <a class="sub" href="siteInfo">사이트 소개</a>
-   <a class="sub" href="clubMall">클럽몰</a>
-   <a class="sub" href="groupViewing">단체 관람</a>
-   <a class="sub" href="sale">특별 세일</a>
+   <a class="sub" id="site" href="siteInfo">사이트 소개</a>
+   <a class="sub" id="club" href="clubMall">클럽몰</a>
+   <a class="sub" id="view" href="groupViewing">단체 관람</a>
+   <a class="sub" id="sale" href="sale">특별 세일</a>
+    <a class="sub" id="event" href="event">이벤트</a>
   </td>
  </tr>
-
+</table>
+<table width="960"  align="center">
  <tr>
   <td height="500" colspan="2" align="center">
    <jsp:include page="mainPage.jsp"/>
