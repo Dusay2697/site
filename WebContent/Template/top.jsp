@@ -7,7 +7,8 @@
 <title>Top.jsp</title>
 </head>
 <body>
-<h1>Football World 홈페이지</h1>
-
+<div id="logo">
+<img src="<%=request.getContextPath()%>/image/logo.gif" width="300" height="123" >
+</div>
 </body>
 </html>

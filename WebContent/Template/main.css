@@ -3,7 +3,7 @@
  .right {
     position: fixed;
     left: 280px;
-    bottom:50px;
+    bottom:30px;
     text-decoration: none;
     color: black;
     font-size: 12px;
@@ -12,7 +12,7 @@
   .left {
     position: fixed;
     right: 280px;
-    bottom:50px;
+    bottom:30px;
     text-decoration: none;
     color: black;
     font-size: 12px;
@@ -60,27 +60,27 @@
   
   #site {
    position: relative;
-   left: 130px;
+   left: 160px;
   }
   
   #club {
    position: relative;
-   left: 330px;
+   left: 360px;
   }
   
   #view {
    position: relative;
-   left: 530px;
+   left: 560px;
   }
   
   #sale {
    position: relative;
-   left: 730px;
+   left: 760px;
   }
   
   #event {
    position: relative;
-   left: 930px;
+   left: 960px;
   }
   #bm {
    border-top: 1px solid;
