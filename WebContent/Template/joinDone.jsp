@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Login.jsp</title>
-<link href="login.css" rel="stylesheet" type="text/css">
+<title>joinDone.jsp</title>
+<link href="joinDone.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <%--상단 메뉴--%>
@@ -37,26 +37,19 @@
  </tr>
 </table>
 
- <%--로그인 화면 내용--%>
+ <%--회원가입완료 화면--%>
  <div id="banner" align="center">
    <img src="<%=request.getContextPath()%>/image/banner2.jpg" width="1000" height="110" >
  </div>
- <div id="help" >홈 > 로그인</div>
-<form action="main.jsp" method="post"><!-- 로그인 완료 시 메인화면인 main.jsp파일로 넘어간다. -->
- <table id="form"  width="960" align="center">
-  <tr>
-   <td align="center">아이디</td>
-   <td><input type="text" name="id"></td>
-  </tr>
-  <tr>
-   <td align="center">비밀번호</td>
-   <td><input type="password" name="passwd"></td>
-  </tr>
-  <tr>
-   <td id="bt" align="center"><input type="submit" value="로그인"></td>
-  </tr>
- </table>
-</form>
+ <div id="help" >홈 > 회원가입</div>
+ <div id="done">
+    <h1 id=h1>회원가입이 완료되었습니다.</h1>
+
+    <p id=p1>회원가입해주셔서 감사합니다.</p>
+  </div>
+    <a href="main.jsp"><button id="btn1" type="submit">메인으로 이동</button></a>
+    <a href="login.jsp"><button id="btn2" type="submit">로그인</button></a>
+
  
   <%--FOOTER--%>
   <table width="960" align="center">

@@ -1,0 +1,133 @@
+@charset "EUC-KR";
+
+div#content_home {
+	position: absolute;
+	top: 250px;
+	text-align:center;
+	left: 200px;
+	right: 200px;
+}
+
+
+
+div#homeing2 {
+	top:450px;
+	background: 
+	padding: 5px 0 1px 0;
+	text-align: center;
+	padding:10px;
+	left:400px;
+}
+
+hr.line{
+	width: 100%;
+	height: 7px;
+	background-color: #1c205f;
+}
+
+.lines {
+	position: relative;
+	right:90px;
+	width: 450px;
+	height: 2px;
+	background-color: #1c205f;
+}
+
+
+
+div#group,div#notice {
+   position: relative;
+   left: 100px;
+
+}
+
+div#group {
+	position: relative;
+	bottom: 30px;
+	left: 150px;
+}
+
+div#notice {
+	position: relative;
+	bottom: 30px;
+	left: 20px;
+}
+
+.board {
+	font-weight:bold;
+	text-align: left;
+}
+
+
+
+div#Bitem {
+	position:relative;
+	left: 210px;
+	width:150px;
+	height:40px;
+	color:#fff;
+	font-size:15px;
+	fonr-weihgt:bold;
+	text-align:center;/*글씨를 가운데정렬시킴*/
+	margin-top:8px;
+	border:1px solid #1c205f;
+	background-color:#1c205f;
+	border-bottom-style:none;
+	line-height: 40px;
+}
+div#Nitem {
+	position:relative;	
+	left: 210px;
+	width:150px;
+	height:40px;
+	color:#fff;	
+	font-size:15px;
+	fonr-weihgt:bold;
+	text-align:center;/*글씨를 가운데정렬시킴*/
+	margin-top:30px;
+	border:1px solid #1c205f;
+	background-color:#1c205f;
+	border-bottom-style:none;
+	line-height: 40px;
+}
+
+div#goods > ul {
+	position: relative;
+	left: 210px;
+	width:1400px;margin:0 auto;	
+	overflow:hidden;
+}
+
+div#goods > ul > li {
+	list-style:none;
+	float:left;
+	
+	width:200px;
+	height:200px;
+	margin-left:10px;margin-top:10px;
+	
+	border:1px solid #CCC;
+	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
+}
+
+div#goods > ul > li:nth-child(4n+1) {
+	margin-left:5px;
+
+}
+#goods > ul > li:hover {
+	border-color:#ff6600;
+}
+
+div#goods dt {
+	width:100%;text-align:center;
+	margin-bottom:4px; /*이미지와 상품명 사이의 마진을 나타냄*/
+	color:#FFF;
+	
+}
+
+div#goods dd {
+	line-height:15px;
+	text-align:top ;
+	color:#000;
+}
+ 

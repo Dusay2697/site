@@ -1,6 +1,6 @@
 @charset "EUC-KR";
 
- .right {
+.right {
     position: fixed;
     left: 280px;
     bottom:30px;
@@ -84,6 +84,33 @@
   }
   #bm {
    position: relative;
-   top: 700px;
+   top: 500px;
    border-top: 1px solid;
   }
+  #form {
+  position: relative;
+  top: 80px;
+  left: 120px;
+  }
+  #bt {
+  position: relative;
+  top: 10px;
+  left: 400px;
+  }
+  #banner {
+   position: relative;
+   top: 40px; 
+  }
+  #help {
+   position: relative;
+   left: 320px;
+   top: 60px;
+   background-color: #1c205f;
+   color: white;
+   width: 1000px;
+   height: 30px; 
+   font-weight: bold;
+   line-height: 30px;
+ 
+  }
+  

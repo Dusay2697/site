@@ -15,7 +15,7 @@
      <a class="left" id="faq" href="#">FAQ</a>
      <a class="left" id="review" href="#">Review</a>
      
-     <a class="right" id="join" href="join.jsp">회원가입</a>
+     <a class="right" id="agree" href="agree.jsp">회원가입</a>
      <a class="right" id="login1" href="login.jsp">로그인</a>
      <a class="right" id="basket" href="#">장바구니</a>
      <a class="right" id="order" href="#">주문조회</a>

@@ -8,7 +8,7 @@
 </head>
 <body>
 <div id="logo">
-<img src="<%=request.getContextPath()%>/image/logo.gif" width="300" height="123" >
+<a href="main.jsp"><img src="<%=request.getContextPath()%>/image/logo.gif" width="300" height="123" ></a>
 </div>
 </body>
 </html>

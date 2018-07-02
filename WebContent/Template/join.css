@@ -84,6 +84,51 @@
   }
   #bm {
    position: relative;
-   top: 700px;
+   top: 500px;
    border-top: 1px solid;
   }
+  #form {
+  position: relative;
+  top: 80px;
+  left: 120px;
+  }
+  #bt {
+  position: relative;
+  top: 10px;
+  left: 400px;
+ 
+  }
+   #banner {
+   position: relative;
+   top: 40px; 
+  }
+  #help {
+   position: relative;
+   left: 320px;
+   top: 60px;
+   background-color: #1c205f;
+   color: white;
+   width: 1000px;
+   height: 30px; 
+   font-weight: bold;
+   line-height: 30px;
+ 
+  }
+  #ment21 {
+        position: relative;
+        color: rgb(28,32,95);
+        font-weight : bold;
+        top:80px;
+        left: 330px;
+    
+    }
+     #line1 {
+        position: relative;
+        background: rgb(28,32,95);
+        height: 5px;
+        width: 990px;
+        top:70px;
+        left: 320px;
+        
+    }
+  
