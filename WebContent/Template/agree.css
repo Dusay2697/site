@@ -213,7 +213,8 @@
         position: relative;
         background: rgb(28,32,95);
         bottom: 370px;
-        left: 750px;
+        left: 680px;
+        bottom:200px;
         color: white;
         width:100px;
         height:40px;
