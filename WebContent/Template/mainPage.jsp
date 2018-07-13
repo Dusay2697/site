@@ -12,7 +12,7 @@
 
 <div id="content_home" >
 	<div id="homeing">
-		<a href="/"><img src="{% static 'img/banner2.jpg' %}" style="height:100px;"/></a>
+		<a href="/"><img src="<%=request.getContextPath()%>/image/banner2.jpg" style="height:100px;"/></a>
 	</div>
 	<br/>
 
@@ -22,10 +22,10 @@
 	<input type="radio" name="pos" id="pos3">
 	<input type="radio" name="pos" id="pos4">
 	<ul>
-		<li><a href="/"><img src="<%=request.getContextPath()%>/image/banner.png" style= "max-width:909px;"/></a></li>
-		<li><a href="/"><img src="<%=request.getContextPath()%>/image/banner.png" style= "max-width:909px;"/></a></li>
-		<li><a href="/"><img src="<%=request.getContextPath()%>/image/banner.png" style= "max-width:909px;"/></a></li>
-		<li><a href="/"><img src="<%=request.getContextPath()%>/image/banner.png" style= "max-width:909px;"/></a></li>
+		<li><a href="#"><img src="<%=request.getContextPath()%>/image/banner.png" style= "max-width:909px;"/></a></li>
+		<li><a href="#"><img src="<%=request.getContextPath()%>/image/banner.png" style= "max-width:909px;"/></a></li>
+		<li><a href="#"><img src="<%=request.getContextPath()%>/image/banner.png" style= "max-width:909px;"/></a></li>
+		<li><a href="#"><img src="<%=request.getContextPath()%>/image/banner.png" style= "max-width:909px;"/></a></li>
 	</ul>
 	<p class="pos">
 		<label for="pos1"></label>
@@ -44,7 +44,7 @@
 	<div id="group" style="float: left; width: 50%;">
 		<h2 class="board">단체 관람</h2>
         <hr class="lines" style="margin:5px 0;">
-		<table id="applist">
+		<table class="applist">
 		<tr>
 		<td><b><i><a href="#">.</a></i></b></td>
 		<td>Liverpool vs. Real Madrid Champions League Final Guide</td>
@@ -67,7 +67,7 @@
 	<div id="notice" >
 			<h2 class="board">공지사항</h2>
         <hr class="lines" style="margin:5px 0;">
-		<table id="applist">
+		<table class="applist">
 		<tr>
 		<td><b><i><a href="#">.</a></i></b></td>
 		<td>Manchester City League champion uniforms are warehousing</td>
@@ -143,14 +143,14 @@
 
 	*{margin:0;padding:0;}
 	ul,li{list-style:none;}
-	div#slide{height:300px;position:relative;overflow:hidden;}
-	div#slide ul{width:400%;height:100%;transition:1s;}
+	div#slide{height:350px;position:relative;overflow:hidden;}
+	div#slide ul{width:400%;height:100%;transition:1s; position:relative; top:110px;}
 	#slide ul:after{content:"";display:block;clear:both;}
 	#slide li{float:left;width:25%;height:100%;}
 
 	#slide input{display:none;}
 	#slide label{display:inline-block;vertical-align:middle;width:10px;height:10px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:50%;cursor:pointer;}
-	#slide .pos{text-align:center;position:absolute;bottom:60px;left:0;width:100%;text-align:center;}
+	#slide .pos{text-align:center;position:absolute;bottom:10px;left:0;width:100%;text-align:center;}
 	#pos1:checked~ul{margin-left:0%;}
 	#pos2:checked~ul{margin-left:-100%;}
 	#pos3:checked~ul{margin-left:-200%;}

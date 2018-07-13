@@ -35,6 +35,12 @@
     position :relative;
     left: 290px;
   }
+  
+  #notice {
+    position :relative;
+    right: 320px;
+  }
+  
   #faq {
     position :relative;
     right: 290px;
@@ -84,6 +90,6 @@
   }
   #bm {
    position: relative;
-   top: 700px;
+   top: 750px;
    border-top: 1px solid;
   }

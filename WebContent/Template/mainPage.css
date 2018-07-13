@@ -8,15 +8,9 @@ div#content_home {
 	right: 200px;
 }
 
-
-
-div#homeing2 {
-	top:450px;
-	background: 
-	padding: 5px 0 1px 0;
-	text-align: center;
-	padding:10px;
-	left:400px;
+#homeing {
+	position:relative;
+	top:100px;
 }
 
 hr.line{
@@ -27,13 +21,17 @@ hr.line{
 
 .lines {
 	position: relative;
+	top:50px;
 	right:90px;
 	width: 450px;
 	height: 2px;
 	background-color: #1c205f;
 }
 
-
+.applist {
+	position:relative;
+	top:45px;
+}
 
 div#group,div#notice {
    position: relative;
@@ -43,17 +41,19 @@ div#group,div#notice {
 
 div#group {
 	position: relative;
-	bottom: 30px;
+	bottom: 50px;
 	left: 150px;
 }
 
 div#notice {
 	position: relative;
-	bottom: 30px;
+	bottom: 50px;
 	left: 20px;
 }
 
 .board {
+	position:relative;
+	top:55px;
 	font-weight:bold;
 	text-align: left;
 }

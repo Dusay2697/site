@@ -12,8 +12,9 @@
 <table width="960" height="200" align="center">
  <tr>
   <td height="43" align="center"  >
-     <a class="left" id="faq" href="#">FAQ</a>
-     <a class="left" id="review" href="#">Review</a>
+     <a class="left" id="notice" href="notice.jsp">공지사항</a>
+     <a class="left" id="faq" href="faq.jsp">FAQ</a>
+     <a class="left" id="review" href="review.jsp">리뷰</a>
      
      <a class="right" id="agree" href="agree.jsp">회원가입</a>
      <a class="right" id="login1" href="login.jsp">로그인</a>

@@ -1,5 +1,4 @@
 @charset "EUC-KR";
-
  .right {
     position: fixed;
     left: 280px;
@@ -90,21 +89,11 @@
   }
   #bm {
    position: relative;
-   top: 500px;
+   top: 700px;
    border-top: 1px solid;
   }
-  #form {
-  position: relative;
-  top: 80px;
-  left: 120px;
-  }
-  #bt {
-  position: relative;
-  top: 10px;
-  left: 400px;
- 
-  }
-   #banner {
+  
+#banner {
    position: relative;
    top: 40px; 
   }
@@ -119,22 +108,41 @@
    font-weight: bold;
    line-height: 30px;
  
-  }
-  #ment21 {
-        position: relative;
-        color: rgb(28,32,95);
-        font-weight : bold;
-        top:80px;
-        left: 330px;
-    
-    }
-     #line1 {
+  }  
+.container {
+	position: relative;
+	left:315px;
+	top: 100px;
+}
+#tb{
+	position:relative;
+	left:335px;
+	top:100px;
+}
+#tb,#tb tr,#tb td {
+    background: #fff;
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom:1px solid #ddd;
+}
+#tb,#tb tr:nth-child(2n) #tb td {
+    background: #f5f5f5;
+}
+
+#btn {
         position: relative;
         background: rgb(28,32,95);
-        height: 5px;
-        width: 990px;
-        top:70px;
-        left: 320px;
-        
+        top: 200px;
+        left: 1240px; 
+        color: white;
+        width:100px;
+        height:40px;
+        text-align: center;
+        font-weight: bold;
+
     }
-  
+
+
+
+

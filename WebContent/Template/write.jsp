@@ -2,13 +2,21 @@
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Login.jsp</title>
-<link href="login.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<%--상단 메뉴--%>
+ <head>
+ <title>write.jsp</title>
+ <link href="board.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <%
+      String userID = null;
+      if (session.getAttribute("userID") != null){
+    	  userID = (String) session.getAttribute("userID");
+      }
+ 
+ 
+ 
+ %>
+ <%--상단 메뉴--%>
 <table width="960" height="200" align="center">
  <tr>
   <td height="43" align="center"  >
@@ -38,26 +46,35 @@
  </tr>
 </table>
 
- <%--로그인 화면 내용--%>
+ <%--리뷰게시판 글쓰기 화면 내용--%>
  <div id="banner" align="center">
    <img src="<%=request.getContextPath()%>/image/banner2.jpg" width="1000" height="110" >
  </div>
- <div id="help" >홈 > 로그인</div>
-<form action="main.jsp" method="post"><!-- 로그인 완료 시 메인화면인 main.jsp파일로 넘어간다. -->
- <table id="form"  width="960" align="center">
-  <tr>
-   <td align="center">아이디</td>
-   <td><input type="text" name="id"></td>
-  </tr>
-  <tr>
-   <td align="center">비밀번호</td>
-   <td><input type="password" name="passwd"></td>
-  </tr>
-  <tr>
-   <td id="bt" align="center"><input type="submit" value="로그인"></td>
-  </tr>
- </table>
-</form>
+ <div id="help" >홈 > 리뷰게시판 > 글쓰기</div>
+  <div class="container">
+  <div class="row">
+   <form method="post" action="writeAction.jsp">
+    <table  style="text-align: center; border: 1px solid #ddddd ">
+     <thead>
+      
+      </thead>
+      <tbody>
+       <tr>
+        <td><input type="text"  placeholder="글 제목" name="bbsTitle" maxlength="50" style="width:1000px;"></td>
+       </tr>
+       
+       <tr>
+        <td><textarea placeholder="글  내용" name="bbsContent" maxlength="2048" style="height: 600px; width:1000px;"></textarea></td>
+       </tr>
+      </tbody>
+   
+     
+     </table>
+     <input type="submit"  value="글쓰기">
+   </form>
+  </div>
+ </div>
+
  
   <%--FOOTER--%>
   <table width="960" align="center">
@@ -67,5 +84,6 @@
   </td>
 </tr>
 </table>
-</body>
+
+</body> 
 </html>
