@@ -29,11 +29,11 @@
 <table width="1600"  align="center">
  <tr id="menu" >
   <td align="left" width="100%">
-   <a class="sub" id="site" href="siteInfo">사이트 소개</a>
-   <a class="sub" id="club" href="clubMall">클럽몰</a>
-   <a class="sub" id="view" href="groupViewing">단체 관람</a>
-   <a class="sub" id="sale" href="sale">특별 세일</a>
-    <a class="sub" id="event" href="event">이벤트</a>
+   <a class="sub" id="site" href="siteInfo.jsp">사이트 소개</a>
+   <a class="sub" id="club" href="clubMall.jsp">클럽몰</a>
+   <a class="sub" id="view" href="groupViewing.jsp">단체 관람</a>
+   <a class="sub" id="sale" href="sale.jsp">특별 세일</a>
+    <a class="sub" id="event" href="toto.jsp">이벤트</a>
   </td>
  </tr>
 </table>
