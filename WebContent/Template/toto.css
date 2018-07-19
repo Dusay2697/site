@@ -196,8 +196,13 @@
 
 /*상단 네비게이션 끝*/
 
-
-
+* { margin: 0; padding: 0;  } 
+li { list-style: none; } 
+.left_menu { width: 100px;  position: relative; left: 200px; top: 100px;} 
+.left_menu > li { background: #28324e; color: #fff; text-align: center; line-height: 40px; height: 40px; border-radius: 5px; margin-bottom: 5px; font-size:15px;  } 
+.left_menu > li:hover { color: yellow; } 
+.lm_sub {  margin-top: 5px; display: none;  } 
+.lm_sub li {  color: #000; box-shadow: 2px 2px 2px #888; border-radius: 5px; border: 1px solid #ccc; background: #fff; font-size:15px; } 
 /* Common */
 
 @charset "utf-8";
@@ -278,7 +283,7 @@ a{color:#44526c;text-decoration:none}
 
 
 
-.scroll_view{overflow:hidden;overflow-y:scroll;position:relative;height:526px;padding:20px 23px}
+.scroll_view{overflow:hidden;overflow-y:scroll;position:relative;height:526px;padding:20px 23px; top:50px;}
 
 .poll_bx{position:relative;width:750px;margin:0 auto;letter-spacing:-1px}
 

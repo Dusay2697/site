@@ -3,9 +3,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+
 <!-- jQuery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
 
 <title>toto.jsp</title>
 <link rel="stylesheet" type="text/css" href="toto.css">
@@ -28,7 +31,7 @@
   </td>
  </tr>
 </table>
- <%--메뉴--%>
+ <%--메인 메뉴--%>
 <table width="1600"  align="center">
  <tr id="menu" >
   <td align="left" width="100%">
@@ -40,6 +43,19 @@
   </td>
  </tr>
 </table>
+
+ <%--사이드 메뉴--%>
+<ul class="left_menu"> 
+<li>이벤트</li> 
+<li>미니게임 
+<ul class="lm_sub"> 
+<li> 
+<a href="toto.jsp">경기결과 예측
+<br>룰렛을 돌려라! 
+</li> 
+</ul> 
+</li> 
+</ul> 
 
  <%--경기예측 화면 내용--%>
   <div id="banner" align="center">
@@ -458,6 +474,10 @@
             $("#ex3_Result1").html(rowData+"를 선택하였습니다.");    
              
         });
+        
+        $('.left_menu > li').click(function(){ 
+        	   $(this).children('.lm_sub').slideDown(); 
+        	}); 
     
     </script>
 
