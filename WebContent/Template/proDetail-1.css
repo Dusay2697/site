@@ -1,0 +1,346 @@
+@charset "EUC-KR";
+
+.right {
+    position: fixed;
+    left: 280px;
+    bottom:30px;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    
+  }
+  .left {
+    position: fixed;
+    right: 280px;
+    bottom:30px;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+  }
+  
+  #agree {
+    position :relative;
+    left: 200px;
+    
+  }
+  #login1{
+    position :relative;
+    left: 230px;
+  }
+  #basket {
+    position :relative;
+    left: 260px;
+  }
+  #order {
+    position :relative;
+    left: 290px;
+  }
+  
+   #notice {
+    position :relative;
+    right: 320px;
+  }
+  
+  #faq {
+    position :relative;
+    right: 290px;
+  }
+  #review {
+    position :relative;
+    right: 260px;
+  }
+  #menu {
+ 
+   background: #1c205f;
+   height: 100px;
+   
+  }
+  .sub{
+   
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+   font-weight: bold;
+  
+  }
+  
+  #site {
+   position: relative;
+   left: 160px;
+  }
+  
+  #club {
+   position: relative;
+   left: 360px;
+  }
+  
+  #view {
+   position: relative;
+   left: 560px;
+  }
+  
+  #sale {
+   position: relative;
+   left: 760px;
+  }
+  
+  #event {
+   position: relative;
+   left: 960px;
+  }
+  #bm {
+   position: relative;
+   top: 500px;
+   border-top: 1px solid;
+  }
+ 
+  #banner {
+   position: relative;
+   top: 40px; 
+  }
+  #help {
+   position: relative;
+   left: 320px;
+   top: 60px;
+   background-color: #1c205f;
+   color: white;
+   width: 1000px;
+   height: 30px; 
+   font-weight: bold;
+   line-height: 30px;
+ 
+  }
+  
+  #prod {
+    position:relative;
+    left:320px;
+    top:150px;
+  }
+   #name {
+     position:relative;
+     left:750px;
+     bottom:225px;
+     font-weight: bold;
+     font-size:20px;
+   }
+  
+  hr#line1{
+    position:relative;
+    bottom:230px;
+    left:215px;
+	width: 35%;
+	height: 5px;
+	background-color: #1c205f;
+}
+
+#info {
+	position:relative;
+	 left:750px;
+     bottom:225px;  
+     font-size:18px;
+     line-height: 3.0;
+	
+}
+
+#btn1{
+    position: relative; 
+    bottom: 150px;
+    left: 750px;
+    width:130px;
+    height:50px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    background: rgb(28,32,95);
+    color: rgb(241, 196, 15);
+    font-size:15px;
+}
+
+#btn2{
+    position: relative; 
+    bottom: 150px;
+    left: 750px;
+    width:130px;
+    height:50px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    background: rgb(28,32,95);
+    color: white;
+    font-size:15px;
+}
+
+#backg {
+	position:relative;
+	bottom:215px;
+	left:355px;
+	width:290px;
+	height:170px;
+	background : rgb(224, 224, 224);
+}
+
+#title {
+	font-weight:bold;
+}
+
+.box {
+	position:relative;
+	left:10px;
+	width:70px;
+	height:20px;
+	background: rgb(94, 94, 94);
+	text-align: center;
+
+}
+
+ #txt1 {
+	
+	font-weignt: bold;
+	color: white;
+}
+ 
+ #txt2 {
+    position:relative;
+    bottom:45px;
+	font-weignt: bold;
+	color: rgb(224, 224, 224);
+} 
+
+ #txt3 {
+    position:relative;
+    bottom:90px;
+	font-weignt: bold;
+	color: yellow;
+} 
+
+ #txt4 {
+    position:relative;
+    bottom:135px;
+	font-weignt: bold;
+	color: pink;
+} 
+
+ #txt5 {
+    position:relative;
+    bottom:180px;
+	font-weignt: bold;
+	color: red;
+} 
+
+#grad1 {
+	
+	position:relative;
+	left:100px;
+	bottom:35px;
+	font-weignt: bold;
+}
+
+#grad2 {
+	
+	position:relative;
+	left:100px;
+	bottom:80px;
+	font-weignt: bold;
+}
+
+#grad3 {
+	
+	position:relative;
+	left:100px;
+	bottom:125px;
+	font-weignt: bold;
+}
+
+#grad4 {
+	
+	position:relative;
+	left:100px;
+	bottom:170px;
+	font-weignt: bold;
+}
+
+#grad5 {
+	
+	position:relative;
+	left:100px;
+	bottom:215px;
+	font-weignt: bold;
+}
+
+#per1 {
+	position:relative;
+	left:17px;
+}
+
+#per3 {
+	position:relative;
+	left:11px;
+}
+
+#per4 {
+	position:relative;
+	left:30px;
+}
+
+#per5 {
+	position:relative;
+	left:15px;
+}
+
+ hr#line2{
+    position:relative;
+    bottom:140px;
+	width: 60%;
+	height: 5px;
+	background-color: rgb(224, 224, 224);
+}
+
+.main {
+	   position:relative;
+	   bottom:100px;
+	   left:325px;
+       }
+
+section {
+       display: none;
+       padding: 20px 0 0;
+       }
+
+/*라디오버튼 숨김*/
+ input {
+              display: none;}
+
+label {
+            display: inline-block;
+            width: 190px;
+            margin: 0 0 -1px;
+            padding: 15px 25px;
+            font-weight: 600;
+            text-align: center;
+            color: white;
+            border: 1px solid transparent;
+            background: rgb(28,32,95);}
+
+label:hover {
+            color: rgb(241, 196, 15);
+            cursor: pointer;}
+
+ /*input 클릭시, label 스타일*/
+ input:checked + label {
+              color: rgb(241, 196, 15);}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+            display: block;}
+ 
+ #content2 {
+  line-height: 2.0;
+  
+ }
+ #next {
+  position:relative;
+  left:300px;
+  bottom:162px;
+ }

@@ -7,7 +7,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
  <head>
- <title>faq.jsp</title>
+ <title>boardAdmin.jsp</title>
  <link href="board.css" rel="stylesheet" type="text/css">
  <style type="text/css">
      a,a:hover {
@@ -53,20 +53,20 @@
  </tr>
 </table>
 
- <%--faq게시판 화면 내용--%>
+ <%--게시물 관리 화면 내용--%>
  <div id="banner" align="center">
    <img src="<%=request.getContextPath()%>/image/banner2.jpg" width="1000" height="110" >
  </div>
- <div id="help" >홈 > FAQ게시판</div>
+ <div id="help" >홈 > 마이페이지 > 게시물 관리</div>
  <div>
+ 
   <div class="row">
    <table id="tb" style="text-align: center;" width="960" >
     <thead>
      <tr>
+      <th style="background-color: #eeeee; text-align: center;">분류</th>
       <th style="background-color: #eeeee; text-align: center;">번호</th>
       <th style="background-color: #eeeee; text-align: center;">제목</th>
-      <th style="background-color: #eeeee; text-align: center;">작성자</th>
-      <th style="background-color: #eeeee; text-align: center;">작성일</th>
      </tr>
      </thead>
      <tbody>
@@ -76,71 +76,16 @@
          
      %>
       <tr>
-       <td>1</td>
-       <td><a href="#">배송관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-01</td>
+       <td style="text-align: center;">리뷰</td>
+       <td style="text-align: center;">1</td>
+       <td style="text-align: center;">맨시티 홈 저지 17/18 리뷰</td>
       </tr>
-      <tr>
-       <td>2</td>
-       <td><a href="#">결제관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-08</td>
+      <tr>      
+       <td style="text-align: center;">1:1 상담</td>
+       <td style="text-align: center;">2</td>
+       <td style="text-align: center;">배송문의입니다.</td>
       </tr>
-      <tr>
-       <td>3</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>4</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>5</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>6</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>7</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>8</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>9</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>10</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>11</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
+   
      </tbody>
    </table>
     <%

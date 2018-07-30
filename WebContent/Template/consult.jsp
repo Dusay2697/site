@@ -7,7 +7,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
  <head>
- <title>faq.jsp</title>
+ <title>consult.jsp</title>
  <link href="board.css" rel="stylesheet" type="text/css">
  <style type="text/css">
      a,a:hover {
@@ -15,13 +15,20 @@
        text-decoration: none;
      }
  </style>
+ 
  </head>
  <body>
  <%
+      String userID = null;
+      if (session.getAttribute("userID") != null){
+    	  userID = (String) session.getAttribute("userID");
+      }
       int pageNumber = 1;
       if (request.getParameter("pageNumber") != null){
-	  pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
- }
+    	  pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
+      }
+ 
+ 
  %>
  <%--상단 메뉴--%>
 <table width="960" height="200" align="center">
@@ -29,7 +36,7 @@
   <td height="43" align="center"  >
      <a class="left" id="notice" href="notice.jsp">공지사항</a>
      <a class="left" id="faq" href="faq.jsp">FAQ</a>
-     <a class="left" id="review" href="review.jsp">리뷰</a>
+     <a class="left" id="review" href="review,jsp">리뷰</a>
      
      <a class="right" id="agree" href="agree.jsp">회원가입</a>
      <a class="right" id="login1" href="login.jsp">로그인</a>
@@ -53,14 +60,14 @@
  </tr>
 </table>
 
- <%--faq게시판 화면 내용--%>
+ <%--1:1 상담 게시판 화면 내용--%>
  <div id="banner" align="center">
    <img src="<%=request.getContextPath()%>/image/banner2.jpg" width="1000" height="110" >
  </div>
- <div id="help" >홈 > FAQ게시판</div>
- <div>
+ <div id="help" >홈 > 마이페이지 > 1:1 맞춤 상담</div>
+<div>
   <div class="row">
-   <table id="tb" style="text-align: center;" width="960" >
+   <table id="tb" style="text-align: center;" width="960">
     <thead>
      <tr>
       <th style="background-color: #eeeee; text-align: center;">번호</th>
@@ -73,89 +80,34 @@
      <%
           BbsDAO bbsDAO = new BbsDAO();
           ArrayList<Bbs> list = bbsDAO.getList(pageNumber);
-         
+          for(int i =0; i <list.size(); i++) {
      %>
       <tr>
-       <td>1</td>
-       <td><a href="#">배송관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-01</td>
+         <td><%=list.get(i).getBbsID() %></td>
+         <td><a href="view.jsp?bbsID=<%= list.get(i).getBbsID() %>"><%=list.get(i).getBbsTitle() %></a></td><%--제목을 클릭하면 게시물상세내용을 볼수 있도록한다.--%>
+         <td><%=list.get(i).getUserID() %></td>
+         <td><%=list.get(i).getBbsDate().substring(0,11) + list.get(i).getBbsDate().substring(11,13) + "시" + list.get(i).getBbsDate().substring(14,16) + "분" %></td><%--시간을 깔끔하게 볼 수 있도록한다.--%>
       </tr>
-      <tr>
-       <td>2</td>
-       <td><a href="#">결제관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-08</td>
-      </tr>
-      <tr>
-       <td>3</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>4</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>5</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>6</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>7</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>8</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>9</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>10</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>11</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
+      <%
+          }
+      %>
      </tbody>
    </table>
-    <%
+   <%
        if(pageNumber != 1){//1이상일때
    %>
         <a href="bbs.jsp?pageNumber=<%=pageNumber -1 %>" class="btn btn-success btn-arraw-left">이전</a>   
   <%
        }if(bbsDAO.nextPage(pageNumber + 1)){
   %>
-        <a href="bbs.jsp?pageNumber=<%=pageNumber +1 %>" class="btn btn-success btn-arraw-left">다음</a>
+        <a href="bbs.jsp?pageNumber=<%=pageNumber +1 %>" class="btn btn-success btn-arraw-left">다음</a>   
   <%
        }
   %>
+  <a href="write.jsp" id="btn">글쓰기</a>
   </div>
  </div>
+ 
  
   <%--FOOTER--%>
   <table width="960" align="center">
@@ -165,6 +117,9 @@
   </td>
 </tr>
 </table>
-
+ 
 </body> 
 </html>
+
+
+

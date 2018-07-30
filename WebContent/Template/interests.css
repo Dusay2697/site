@@ -1,5 +1,6 @@
 @charset "EUC-KR";
- .right {
+
+.right {
     position: fixed;
     left: 280px;
     bottom:30px;
@@ -35,7 +36,7 @@
     left: 290px;
   }
   
-  #notice {
+   #notice {
     position :relative;
     right: 320px;
   }
@@ -89,11 +90,20 @@
   }
   #bm {
    position: relative;
-   top: 700px;
+   top: 500px;
    border-top: 1px solid;
   }
-  
-#banner {
+  #form {
+  position: relative;
+  top: 80px;
+  left: 120px;
+  }
+  #bt {
+  position: relative;
+  top: 10px;
+  left: 400px;
+  }
+  #banner {
    position: relative;
    top: 40px; 
   }
@@ -108,48 +118,19 @@
    font-weight: bold;
    line-height: 30px;
  
-  }  
-.container {
-	position: relative;
-	left:315px;
-	top: 100px;
-}
-#tb{
-	position:relative;
-	left:335px;
-	top:100px;
-}
-#tb,#tb tr,#tb td {
-    background: #fff;
-    padding: 6px;
-    text-align: left;
-    vertical-align: top;
-    border-bottom:1px solid #ddd;
-}
-#tb,#tb tr:nth-child(2n) #tb td {
-    background: #f5f5f5;
-}
-
-#btn {
+  }
+  #boxx1{
         position: relative;
-        background: rgb(28,32,95);
-        top: 200px;
-        left: 1240px; 
-        color: white;
-        width:100px;
-        height:40px;
-        text-align: center;
+        width: 1000px;
+        height: 150px;
+        background: rgb(224, 224, 224);
+        top:90px;
+        left: 320px;
+        color: #1c205f;
         font-weight: bold;
+        text-align: center;
+        line-height:150px;
+        
 
     }
-#txt {
-  position:relative;
-  left:320px;
-  top:80px;
-  font-size:18px;
-  line-height:50px;
-  }
-
-
-
-
+  

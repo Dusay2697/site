@@ -7,7 +7,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
  <head>
- <title>faq.jsp</title>
+ <title>orderList.jsp</title>
  <link href="board.css" rel="stylesheet" type="text/css">
  <style type="text/css">
      a,a:hover {
@@ -53,20 +53,21 @@
  </tr>
 </table>
 
- <%--faq게시판 화면 내용--%>
+ <%--주문내역조회 게시판 화면 내용--%>
  <div id="banner" align="center">
    <img src="<%=request.getContextPath()%>/image/banner2.jpg" width="1000" height="110" >
  </div>
- <div id="help" >홈 > FAQ게시판</div>
+ <div id="help" >홈 > 마이페이지 > 주문내역 조회</div>
  <div>
+ <p id="txt">주문번호를 클릭하시면 해당 주문에 대한 상세내역을 확인하실 수 있습니다.<br/>
+		개별상품에 대한 배송조회는 상세내역에서 확인하시기 바랍니다.</p>
   <div class="row">
    <table id="tb" style="text-align: center;" width="960" >
     <thead>
      <tr>
-      <th style="background-color: #eeeee; text-align: center;">번호</th>
-      <th style="background-color: #eeeee; text-align: center;">제목</th>
-      <th style="background-color: #eeeee; text-align: center;">작성자</th>
-      <th style="background-color: #eeeee; text-align: center;">작성일</th>
+      <th style="background-color: #eeeee; text-align: center;">주문 번호</th>
+      <th style="background-color: #eeeee; text-align: center;">주문 일자</th>
+      <th style="background-color: #eeeee; text-align: center;">주문 상품</th>
      </tr>
      </thead>
      <tbody>
@@ -76,71 +77,16 @@
          
      %>
       <tr>
-       <td>1</td>
-       <td><a href="#">배송관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-01</td>
+       <td style="text-align: center;">1</td>
+       <td style="text-align: center;">2018-07-01</td>
+       <td style="text-align: center;">맨시티 홈 저지 17/18</td>
       </tr>
       <tr>
-       <td>2</td>
-       <td><a href="#">결제관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-08</td>
+       <td style="text-align: center;">2</td>
+       <td style="text-align: center;">2018-07-08</td>
+       <td style="text-align: center;">아스날 홈 저지 17/18</td>
       </tr>
-      <tr>
-       <td>3</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>4</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>5</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>6</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>7</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>8</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>9</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>10</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
-      <tr>
-       <td>11</td>
-      <td><a href="#">환불관련 faq입니다.</td></a>
-       <td>관리자</td>
-       <td>2018-07-11</td>
-      </tr>
+   
      </tbody>
    </table>
     <%
